@@ -1,0 +1,51 @@
+.page-template-page-homepage
+  .container
+    .four.columns
+      width: 300px
+      @media screen and (max-width: $break-1199)
+        width: 240px
+#sidebar-widgets
+  .content-boxes
+    .box
+      width: 100%
+      margin-right: 0px
+      background: $blue
+      text-align: center
+      color: $white
+      &::before
+        background-color: $blue
+        background-image: url(../images/United-Claims_ellipseWhite.svg)
+      .box_title
+        +font ('Lato', 1.3em, bold, null, null)
+        text-align: center
+        color: $white
+        margin-top: 2em
+      .box_phone
+        +font ('Lato', 2.5em, bold, null, null)
+        margin-bottom: -10px
+      .box_email
+        +font ('Lato', 1.2em, 400, null, null)
+  .home-contactForm
+    .content-boxes
+      .box
+        background-color: $blue-light
+        &::before
+          background-color: $blue-light
+          border-color: $blue-light
+    form.enquiry-form
+      .gfield_time_hour i
+        display: none
+      .ginput_container_time,
+      .ginput_container_name
+        input
+          margin: 0
+      input[type=submit]
+        +font ('Lato', 1.2em, 400, null, null)
+        width: 100%
+        background-color: $blue
+        border-color: $blue
+        &:hover
+          background-color: $white
+          color: $blue
+          text-shadow: 0px 1px $blue
+          border-color: $white

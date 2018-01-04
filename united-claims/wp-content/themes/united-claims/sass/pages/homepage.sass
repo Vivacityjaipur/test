@@ -1,0 +1,223 @@
+.page-template-page-homepage
+
+  .content
+    @media screen and (max-width: $break-767)
+      width: 100%
+  .container
+    .twelve.columns
+      @media screen and (max-width: $break-959)
+        width: 100%
+  #sidebar-widgets
+    padding-left: 0px!important
+.homeImageBackground-content
+  p
+    color: $white
+    @media screen and (max-width: $break-479)
+      text-align: center
+  p.title
+    //$font-family, $size, $weight, $style, $height)
+    +font ('Lato', 2.125em, bold, normal, 1.4em)
+    display: block
+    width: 56%
+    @media screen and (max-width: $break-1199)
+      //+font (null, 1.5em, null, normal, 1.4em)
+      width: 70%
+    @media screen and (max-width: $break-959)
+      width: 80%
+    @media screen and (max-width: $break-767)
+      width: 100%
+      +font (null, 1.7em, null, null, null)
+    @media screen and (max-width: $break-767)
+      +font (null, 1.5em, null, null, null)
+      width: 100%
+    // @media screen and (max-width: $break-479)
+    //   width: 100%
+  .hslider
+    color: $white
+    &-small
+      +font(null, 3.5em, 600, null, 1em)
+    &-big
+      +font(null, 4.2em, bold, null, 1em)
+      text-transform: uppercase
+  .sub-title
+    @media screen and (max-width: $break-767)
+      text-align: center
+    p
+      color: $blue
+      display: inline-block
+      margin: 0
+      +font (null, 1.375em, 400, null, null)
+      &:nth-child(2)
+        margin-left: 2em
+      @media screen and (max-width: $break-767)
+        &:nth-child(2)
+          margin-left: 0
+      @media screen and (max-width: $break-479)
+        margin-left: 0
+        color: $white
+      .high-text
+        color: $white
+        +font (null, 2em, bold, null, null)
+        text-decoration: underline
+      .underneath
+        +font (null, .9em, 400, italic, null)
+        &::before
+          content: ' -'
+        @media screen and (max-width: $break-767)
+          display: block
+  .enquire
+    display: flex
+    align-items: center
+    margin: 8em 0 0
+    width: 60%
+    @media screen and (max-width: $break-1199)
+      flex-direction: column
+      width: 100%
+    // @media screen and (max-width: $break-479)
+    a.btn-enquire-home
+      color: $white
+      +font (null, 1.5em, bold, null, null)
+      background-color: $blue
+      padding: 1em 1.5em
+      box-sizing: border-box
+      width: 400px
+      text-align: center
+      @media screen and (max-width: $break-767)
+        width: 100%
+        text-align: center
+    p
+      +font(null, null, null, null, 1.2em)
+      margin: 0 0 0 1em
+      font-style: italic
+      @media screen and (max-width: $break-1199)
+        margin-top: 1em
+    // p.find-print
+    //   +font (null, null, null, italic, 1.3em)
+    //   display: block
+    //   width: 60%
+    //   margin-left: 2em
+    //   @media screen and (max-width: $break-1199)
+    //     margin: 20px 0 20px 0
+    //   @media screen and (max-width: $break-767)
+    //     width: 100%
+
+  h3
+    color: $white
+    text-shadow: 2px 1px $grey
+    +font (null, null, bold, normal, 1.3em)
+    text-align: center
+
+.content-boxes
+  display: flex
+  flex-wrap: wrap
+  box-sizing: content-box
+  .box
+    width: calc(100%/3 - (1.5em))
+    padding: 1em
+    position: relative
+    box-sizing: border-box
+    margin-right: 1.5em
+    margin-bottom: 4em
+    &:nth-child(3n+3)
+      margin-right: 0
+    &:hover
+      box-shadow: 2px 2px 5px #888888
+      &::before
+        background-color: $blue
+        background-image: url(../images/United-Claims_ellipseWhite.svg)
+        border-color: #white
+        color: $white
+      .ellipse
+        fill: $white
+      a.box_read-more
+        color: $blue-light
+    &::before
+      content: ''
+      font-family: 'FontAwesome'
+      position: absolute
+      top: -40px
+      left: calc(50% - 30px)
+      width: 60px
+      height: 60px
+      border: 2px solid $blue
+      border-radius: 50%
+      background-size: 90%
+      background-image: url(../images/United-Claims_ellipse.svg)
+      background-repeat: no-repeat
+      background-position: center 12px
+      background-color: white
+    &.no-bg
+      background-color: $blue-ultra-light
+      &:nth-child(1)
+        &::before
+          content: '\f154'
+      &:nth-child(2)
+        &::before
+          content: '\f0c0'
+      &:nth-child(3)
+        &::before
+          content: '\f087'
+      &:hover
+        &::before
+          color: $blue
+      &::before
+        background-color: $blue-ultra-light
+        background-image: none
+        text-align: center
+        font-size: 2em
+        padding-top: 0.2em
+        box-sizing: border-box
+        color: $blue
+    .box_title
+      +font ('Lato', 1.3em, bold, null, null)
+      text-align: center
+      color: $blue
+      margin-top: 2em
+    .box_description
+      margin-bottom: 30px
+    .box_read-more
+      color: $blue
+      position: absolute
+      bottom: .5em
+      &::after
+        font-family: 'FontAwesome'
+        content: '\f105'
+        margin-left: 5px
+    @media screen and (max-width: $break-1199)
+      width: calc(100%/2 - (1.5em))
+      margin-right: 1.5em
+      &:nth-child(even)
+        margin-right: 0
+      &:nth-child(3n+3)
+        margin-right: 1.5em
+    @media screen and (max-width: $break-767)
+      width: 100%
+      margin-right: 0px!important
+
+// Slider options
+
+.owl-nav
+  .owl-prev,
+  .owl-next
+    position: absolute
+    top: 50%
+    background: $white
+    border-radius: 50px
+    width: 50px
+    height: 50px
+    display: block
+    text-align: center
+    +font(null, 2em, bold, null, null)
+    color: $blue
+  .owl-prev
+    left: 30px
+    @media screen and (max-width: $break-479)
+      left: 0
+    &::after
+      content: '<'
+  .owl-next
+    right: 30px
+    @media screen and (max-width: $break-479)
+      right: 0
+    &::after
+      content: '>'

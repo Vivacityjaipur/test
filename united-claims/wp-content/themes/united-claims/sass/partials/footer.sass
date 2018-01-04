@@ -1,0 +1,99 @@
+#footer
+  .container
+    @media screen and (max-width: $break-1199)
+      display: flex
+      flex-wrap: wrap
+    .four.columns
+      width: 260px
+      @media screen and (max-width: $break-1199)
+        width: 440px
+        &:nth-child(1)
+          order: 1
+        &:nth-child(2)
+          order: 3
+        &:nth-child(3)
+          order: 4
+        &:nth-child(4)
+          order: 2
+      @media screen and (max-width: $break-959)
+        width: 364px
+  .widget
+    h3
+      text-transform: uppercase
+      color: $blue
+      //$font-family, $size, $weight, $style, $height)
+      +font ('Lato', 1.2em!important, bold!important, normal, 1.4em)
+    ul
+      li
+        border-color: $grey-light!important
+  .footer-first-column
+    img
+      width: 100%
+      margin-bottom: 1em
+    p
+      +font ('Lato', .95em, 400, normal, 1.4em)
+      margin-bottom: 0.9375em
+
+
+  .footer-second-column,
+  .footer-third-column
+    a
+      font-weight: bold
+
+  .footer-second-column
+    ul
+      li
+        padding: 15px 10px 15px 0
+
+  .footer-third-column
+    ul
+      li
+        padding: 4px 10px 4px 0
+
+
+  .footer-fourth-column
+    address
+      font-style: normal
+      span
+        display: block
+        margin-bottom: 6px
+      a
+        color: $grey
+      i
+        display: inline-block
+        width: 24px
+        float: left
+        margin: 5px 0 0px 0
+        color: $blue
+        font-style: normal
+      .adress-overflow
+        overflow: hidden
+
+#copyright
+  .copyright-col1,
+  .copyright-col2
+    p
+      margin: 0
+  .copyright-col1
+    p
+      font-weight: bold
+    ul
+      li
+        margin-left: 0
+        &::after
+          content: ' | '
+        &:last-child:after
+          content: ''
+
+  .copyright-col2
+    p
+      text-align: right
+      line-height: 1.3em
+    a
+      text-decoration: underline
+      color: $white
+    @media screen and (max-width: $break-1199)
+      margin-top: 1em
+      float: left
+      p
+        text-align: left

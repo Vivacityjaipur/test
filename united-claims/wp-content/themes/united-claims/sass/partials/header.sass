@@ -1,0 +1,83 @@
+.site-wrapper
+  #topbar
+    background-color: $blue!important
+#topbar
+  background-color: $blue!important
+  .topbar-col1
+    ul
+      margin: 0
+      padding: 0
+      li
+        display: inline-block
+        margin: 0
+        &:first-child
+          margin-right: 2em
+  p
+    margin: 0
+  i
+    margin-right: 5px
+  .topbar-col2
+    i
+      color: $blue-light
+    @media screen and (max-width: $break-767)
+      display: none!important
+
+.header-v1
+  #navigation > ul
+    margin: 0
+    li:last-child
+      a
+        padding-right: 0
+  #logo
+    img
+      height: auto
+      width: 100%
+    @media screen and (min-width: $break-960) and (max-width: $break-1199)
+      width: 250px
+      height: 78px
+  #logo-navigation
+    @media screen and (min-width: $break-960) and (max-width: $break-1199)
+      display: flex
+      align-items: center
+      justify-content: space-between
+
+#mobile-header
+  // .logo
+  //   @media screen and (max-width: $break-479)
+  //     margin-top: 22px!important
+  img
+    height: 78px!important
+
+.homeImageBackground
+  background-image: url(../images/United-Claims_header-bg.jpg)
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center center
+  height: 490px
+  #header,
+  #header.header-v1
+    background-color: transparent
+  #header
+    box-shadow: none
+    #navigation
+      ul
+        li
+          a
+            color: $white
+          ul
+            li
+              a
+                color: $blue
+  @media screen and (max-width: $break-959)
+    height: 100%
+    margin-top: 1.5em
+  @media screen and (max-width: $break-479)
+    background-position: 80% center
+
+#mobile-navigation
+  @media screen and (max-width: $break-959)
+    ul
+      li.home
+        i
+          padding: 0
+          float: left

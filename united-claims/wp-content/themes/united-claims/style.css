@@ -1,0 +1,10 @@
+/*
+Theme Name: United Claims
+Description: United Claims child theme
+Author: minti
+Template: unicon
+Version: 1.0
+*/
+
+@import url("../unicon/style.css");
+@import url("css/main.css");
